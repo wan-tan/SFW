@@ -1,0 +1,13 @@
+{
+"name": "Deletes certain Domains from your history automaticly",
+"version": "1.0",
+"description": "Deletes pre difined Domains (e.g. Pornhub) from your browser history",
+"permissions": [
+"history"
+],
+"browser_action": {
+"default_popup": "deleteUrls.html",
+"default_icon": "icon.png"
+},
+"manifest_version": 2
+}
