@@ -6,15 +6,160 @@
     <style>
         body {
             min-width: 300px;
+            padding: 0;
+            margin: 0;
+        }
+        .button, .item-name, input[type="text"]{
+            font-family: Roboto;
+        }
+        .button{
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background: #9a1111;
+            color: #d66;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: .02em;
+            transition: background .5s ease-out, color .5s ease-out;;
+        }
+        .button:hover{
+            transition: background .1s ease-out, color .1s ease-out;;
+            background: #da3131;
+            cursor: pointer;
+            color: #fff;
+        }
+        .item-list{
+            margin: 0;
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+            transition: height .5s ease-out;
+        }
+        .item-list-visible{
+            height: 200px;
+            transition: height .5s ease-out;
+            overflow: scroll;
+        }
+        .item{
+            padding: 10px 10px;
+            transition: background .3s ease-out;
+            border-bottom: 1px solid #eee;
+        }
+        .item:hover{
+            background: #eee;
+            transition: background .1s ease-out;
+        }
+        .item-name{
+            float: left;
+        }
+        .item-icon{
+            float: right;
+            background: #ccc;
+            color: #fff;
+            font-weight: 800;
+            font-size: 16px;
+            padding: 2px 8px 5px 8px;
+            margin: -6px -5px 0 0;
+        }
+        .item-icon:hover{
+            background: #999;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            outline: 0;
+            border: 0;
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 18px;
+            font-weight: 600;
+            border-top: 5px solid #d66;
+        }
+        #enable-list{
+            width: 300px;
+            height: 180px;
+            transition: height .5s ease-out, background-position .5s ease-out;
+            background: url('img/img.png');
+            background-size: cover;
+            background-position: center;
+        }
+        #enable-list.item-list-visible{
+            height: 23px;
+            background-position: top;
+            transition: height .5s ease-out, background-position .5s ease-out;
         }
     </style>
-    <script src="client-cuid.js"></script>
 
+    <!-- SCRIPTS -->
+    <script src="client-cuid.js"></script>
     <script src='sfw.js'></script>
 </head>
 
 <body>
+    <div id="enable-list"></div>
+    <ul id="item-list" class="item-list">
+        <!-- LIST PLACEHOLDER -->
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <li class="item">
+            <div class="item-name">http://asd.asd/</div>
+            <div class="item-icon">x</div>
+        </li>
+        <!-- LIST PLACEHOLDER END -->
+    </ul>
+
+    <!-- AUTOFILL VALUE WITH URL OF CURRENT PAGE -->
+    <input type="text" value="https://asd.asd/"></input>
+    <div class="button">ADD THIS SITE</button>
 
 </body>
-
 </html>

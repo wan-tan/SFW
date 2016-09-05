@@ -1,13 +1,18 @@
 {
-    "name": "Deletes certain Domains from your history automaticly",
+    "name": "Safe For Work",
     "version": "1.0",
-    "description": "Deletes pre difined Domains from your browser history",
+    "description": "Automatically deletes selected Domains from your browser history",
     "permissions": [
         "history", "storage"
     ],
     "browser_action": {
-        "default_popup": "sfw.html",
-        "default_icon": "icon.png"
-    },
-    "manifest_version": 2
+		"default_popup": "sfw.html",
+		"default_icon": "img/icon16.png"
+	},
+	"icons": {
+	     "16": "img/icon16.png",
+         "48": "img/icon48.png",
+        "128": "img/icon128.png"
+	},
+    "manifest_version": 3
 }

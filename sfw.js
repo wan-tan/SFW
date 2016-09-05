@@ -40,3 +40,12 @@ function removeTag(id) {
         chrome.storage.sync.set({ 'sfw_tags': sfw_tags });
     })
 }
+
+// UI
+document.addEventListener('DOMContentLoaded', function() {
+    var e = document.getElementById('enable-list');
+    e.addEventListener('click', function() {
+        document.getElementById("item-list").classList.toggle("item-list-visible");
+        document.getElementById("enable-list").classList.toggle("item-list-visible");
+    });
+});
